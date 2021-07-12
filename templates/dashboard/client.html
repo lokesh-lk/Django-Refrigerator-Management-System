@@ -1,0 +1,59 @@
+{% extends 'partials/base.html' %}
+
+{% block title %}Client Page{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+{% include 'partials/topnav.html' %}
+
+
+<!--Table-->
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-4">
+            {% for message in messages %}
+            {% if message %}
+            <div class="alert alert-{{message.tags}}">
+                {{ message }}
+            </div>
+            {% endif %}
+            {% endfor %}
+            <div class="bg-white p-3">
+                <!--<h4>Add Client</h4>
+                <hr>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <input class="btn btn-success btn-block" type="submit" value="Add Client">
+                </form>-->
+            </div>
+        </div>
+        <div class="col-md-8">
+            <table class="table bg-white">
+                <thead class="bg-info">
+                    <tr class="text-white">
+                        <th scope="col">Credential</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for worker in workers %}
+                        <tr>
+                            <th scope="row"><a class="btn btn-info btn-sm" href="{% url 'dashboard-client-detail' worker.id %}">View</a></th>
+                            <td>{{ worker.username }}</td>
+                            <td>{{ worker.email }}</td>
+                           <!--<td>{{worker.profile.phone}}</td>--> 
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<!--End Table-->
+
+{% endblock %}

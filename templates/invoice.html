@@ -1,0 +1,52 @@
+
+
+
+{% load crispy_forms_tags %}
+
+<!--Table-->
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-4">
+            <div class="border bg-white p-3">
+                <h4>Generate Invoice</h4>
+                <hr>
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <input class="btn btn-success btn-block" type="submit" value="Click">
+                </form>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <table class="table bg-white">
+                <thead class="bg-info">
+                    <tr class="text-white">
+                        <th scope="col">Product</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Order by</th>
+                        <th scope="col">Date</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        {% for dispatch in dispatchs %}
+                        <tr>
+                            <td>{{ dispatch.inward.name }}</td>
+                            <td>{{  dispatch.inward.category }}</td>
+                            <td>{{  dispatch.product_quantity }}</td>
+                            <td>
+                                {{dispatch.client.username}}
+                            </td>
+                            <td>
+                                {{dispatch.date}}
+                            </td>
+                        </tr>
+                        {%  endfor %}
+                             
+                    </tbody>
+                </table>
+            </tbody>
+        </table>
+    </div>
+</div>
+

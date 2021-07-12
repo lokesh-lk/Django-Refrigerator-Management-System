@@ -1,0 +1,32 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting WeasyPrint
+  Downloading WeasyPrint-52.5-py3-none-any.whl (365 kB)
+Collecting cssselect2>=0.1
+  Downloading cssselect2-0.4.1-py3-none-any.whl (13 kB)
+Collecting cairocffi>=0.9.0
+  Downloading cairocffi-1.2.0.tar.gz (70 kB)
+Collecting tinycss2>=1.0.0
+  Downloading tinycss2-1.1.0-py3-none-any.whl (21 kB)
+Collecting CairoSVG>=2.4.0
+  Downloading CairoSVG-2.5.2-py3-none-any.whl (45 kB)
+Requirement already satisfied: setuptools>=39.2.0 in c:\program files\python39\lib\site-packages (from WeasyPrint) (56.0.0)
+Collecting cffi>=0.6
+  Using cached cffi-1.14.5-cp39-cp39-win_amd64.whl (179 kB)
+Requirement already satisfied: Pillow>=4.0.0 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from WeasyPrint) (8.2.0)
+Requirement already satisfied: html5lib>=0.999999999 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from WeasyPrint) (1.1)
+Collecting Pyphen>=0.9.1
+  Downloading Pyphen-0.10.0-py3-none-any.whl (1.9 MB)
+Collecting defusedxml
+  Downloading defusedxml-0.7.1-py2.py3-none-any.whl (25 kB)
+Collecting pycparser
+  Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Requirement already satisfied: webencodings in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from cssselect2>=0.1->WeasyPrint) (0.5.1)
+Requirement already satisfied: six>=1.9 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from html5lib>=0.999999999->WeasyPrint) (1.14.0)
+Building wheels for collected packages: cairocffi
+  Building wheel for cairocffi (setup.py): started
+  Building wheel for cairocffi (setup.py): finished with status 'done'
+  Created wheel for cairocffi: filename=cairocffi-1.2.0-py3-none-any.whl size=89568 sha256=f29d0d5b855737a72863a0c1135dadbe569c79bf6cf51851a01047877fb6184d
+  Stored in directory: c:\users\lokesh\appdata\local\pip\cache\wheels\6d\e0\a5\ad274cc6b49cea0a10793ac7f2198cd54740c32d64f52f78fa
+Successfully built cairocffi
+Installing collected packages: pycparser, tinycss2, cffi, defusedxml, cssselect2, cairocffi, Pyphen, CairoSVG, WeasyPrint
+Successfully installed CairoSVG-2.5.2 Pyphen-0.10.0 WeasyPrint-52.5 cairocffi-1.2.0 cffi-1.14.5 cssselect2-0.4.1 defusedxml-0.7.1 pycparser-2.20 tinycss2-1.1.0

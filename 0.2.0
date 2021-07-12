@@ -1,0 +1,20 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting django-easy-pdf
+  Downloading django_easy_pdf-0.1.1-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: django>=1.8 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from django-easy-pdf) (3.2.3)
+Requirement already satisfied: reportlab>=3 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from django-easy-pdf) (3.5.67)
+Requirement already satisfied: xhtml2pdf>=0.2b1 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from django-easy-pdf) (0.2.5)
+Requirement already satisfied: asgiref<4,>=3.3.2 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from django>=1.8->django-easy-pdf) (3.3.4)
+Requirement already satisfied: pytz in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from django>=1.8->django-easy-pdf) (2021.1)
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from django>=1.8->django-easy-pdf) (0.4.1)
+Requirement already satisfied: pillow>=4.0.0 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from reportlab>=3->django-easy-pdf) (8.2.0)
+Requirement already satisfied: python-bidi>=0.4.2 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from xhtml2pdf>=0.2b1->django-easy-pdf) (0.4.2)
+Requirement already satisfied: pyPdf2 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from xhtml2pdf>=0.2b1->django-easy-pdf) (1.26.0)
+Requirement already satisfied: six in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from xhtml2pdf>=0.2b1->django-easy-pdf) (1.14.0)
+Requirement already satisfied: html5lib>=1.0 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from xhtml2pdf>=0.2b1->django-easy-pdf) (1.1)
+Requirement already satisfied: arabic-reshaper>=2.1.0 in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from xhtml2pdf>=0.2b1->django-easy-pdf) (2.1.3)
+Requirement already satisfied: setuptools in c:\program files\python39\lib\site-packages (from arabic-reshaper>=2.1.0->xhtml2pdf>=0.2b1->django-easy-pdf) (56.0.0)
+Requirement already satisfied: future in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from arabic-reshaper>=2.1.0->xhtml2pdf>=0.2b1->django-easy-pdf) (0.16.0)
+Requirement already satisfied: webencodings in c:\users\lokesh\appdata\roaming\python\python39\site-packages (from html5lib>=1.0->xhtml2pdf>=0.2b1->django-easy-pdf) (0.5.1)
+Installing collected packages: django-easy-pdf
+Successfully installed django-easy-pdf-0.1.1

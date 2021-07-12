@@ -1,0 +1,56 @@
+<!--Topside-->
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    Dashboard 
+                </div>
+                <div class="card-body">
+                    <marquee behavior="" direction="">
+                        <h3 class="my-4">Full Stock and Chamber Stock</h3>
+                    </marquee>
+                </div>
+            </div>
+                         
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    Statistics
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-client' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Client <i class="fas fa-users"></i></h4>
+                                    <h3>{{ workers_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-inward' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Inward <i class="fas fa-box"></i></h4>
+                                    <h3>{{ inward_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'dashboard-dispatch' %}">
+                                <div class="card my-card shadow text-center p-3">
+                                    <h4>Dispatch <i class="fas fa-shipping-fast"></i></h4>
+                                    <h3>{{ dispatchs_count }}</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Topside-->
